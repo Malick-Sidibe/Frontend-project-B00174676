@@ -13,3 +13,17 @@ The site is built using **SvelteKit** and includes multiple pages such as Home, 
 .HTML and CSS
 .Git and Github
 .Copilot mirocsoft AI 
+
+
+# Fetures
+.clean and simply Navigation layout
+.Homepage with hero section, testimonias, and service highlights
+.Responive design using CSS
+.Organized sveltekit routing structer
+
+# Project goals
+
+.build a fully functional multi-page frontend using sveltkit
+.Demonstrate clean code structure and readable components
+.Create a visually appealing and responive user interface
+.Practice version control with small, Meaningful daily commits
