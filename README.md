@@ -44,3 +44,24 @@ src/
      └─ +page.svelte   (Homepage)
 
 .Practice version control with small, Meaningful daily commits
+
+
+# Current pages Completed
+
+The follwoing pages that i have fully created so far:
+
+.Homepage
+.About Page
+.Bookings Page
+.Global Layout (header, footer, navigation)
+.Base HTML and CSS setup (app.html & app.css)
+
+
+# Design Approach
+
+The project use a clean and modern visual style with:
+
+.A consitent colour palette using CSS variables
+.Simple, readable typography
+.Responisve layouts using flexible grids and spacing
+.Reusable components through SvlteKits's layout system
