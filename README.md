@@ -65,3 +65,24 @@ The project use a clean and modern visual style with:
 .Simple, readable typography
 .Responisve layouts using flexible grids and spacing
 .Reusable components through SvlteKits's layout system
+
+ # Authentication Pages Added 
+
+ The project now includes two new user-focused pages:
+ .Login Page (login/+page.svelte)
+ .Register page(register/+page.svelte)
+
+ Both pages include styled forms, consitent layout structere, and follow the same design system used arcoss the site.
+
+  # Form Handling Structure
+
+  All forms in the project (Bookings, Login, Register) follow a consitent structer 
+
+  .Clean accessible labels and inputs
+  .Responsive layout using flexbox
+  .CSS variables for colours and spacing 
+  .Clear call-to-action buttons with hover effects
+  .Simple POST method steup fpr future backend integrantion
+
+  This keeps the UI consistent and makes it eaiser to expand the project later.
+
