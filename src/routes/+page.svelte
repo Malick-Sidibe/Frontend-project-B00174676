@@ -13,7 +13,8 @@
     Today, we offer a fully modern setup with professional-grade audio equipment, dynamic lighting, wireless microphones, and an ever-growing music library spanning every genre and decade. Whether you're into classic rock, R&B, pop hits, or karaoke classics, we’ve got something for everyone.
   </p>
 
-  <button class="cta">Book Now</button>
+  <!-- FIXED BUTTON: now links to /bookings -->
+  <a href="/bookings" class="cta">Book Now</a>
 </section>
 
 <section class="why">
@@ -96,6 +97,8 @@
     font-size: 18px;
     cursor: pointer;
     transition: 0.2s;
+    display: inline-block;
+    text-decoration: none;
   }
 
   .cta:hover {

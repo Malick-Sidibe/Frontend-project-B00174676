@@ -1,42 +1,36 @@
-<h2>Book Your Event</h2>
+<h2>Book a Room</h2>
 
 <p class="intro">
-  Ready to bring the party to your venue? Fill out the form below and our team will get back to you with availability, pricing, and setup details.
+  Reserve your private karaoke room in just a few clicks. Choose your date, time, and group size — we’ll handle the rest.
 </p>
 
 <form method="POST" class="booking-form">
   <label>
-    Your Name:
-    <input type="text" name="name" required>
+    Name:
+    <input name="name" type="text" placeholder="Enter your name" required />
   </label>
 
   <label>
-    Email Address:
-    <input type="email" name="email" required>
+    Email:
+    <input name="email" type="email" placeholder="Enter your email" required />
   </label>
 
   <label>
-    Event Type:
-    <select name="type" required>
-      <option>Birthday Party</option>
-      <option>Wedding</option>
-      <option>Corporate Event</option>
-      <option>Community Event</option>
-      <option>Private Party</option>
-    </select>
+    Date:
+    <input name="date" type="date" required />
   </label>
 
   <label>
-    Event Date:
-    <input type="date" name="date" required>
+    Time:
+    <input name="time" type="time" required />
   </label>
 
   <label>
-    Additional Details:
-    <textarea name="details" rows="4"></textarea>
+    Group Size:
+    <input name="groupSize" type="number" min="1" max="20" required />
   </label>
 
-  <button type="submit" class="submit-btn">Submit Booking</button>
+  <button type="submit">Confirm Booking</button>
 </form>
 
 <style>
@@ -46,42 +40,40 @@
   }
 
   .intro {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .booking-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background: #fafafa;
-    padding: 25px;
-    border-radius: 8px;
-    border-left: 4px solid var(--primary);
+    max-width: 450px;
   }
 
   label {
     display: flex;
     flex-direction: column;
-    font-weight: 500;
+    font-weight: bold;
   }
 
-  input, select, textarea {
+  input {
     padding: 10px;
     border-radius: 6px;
     border: 1px solid #ccc;
+    margin-top: 5px;
   }
 
-  .submit-btn {
+  button {
+    background: var(--secondary);
+    color: white;
     padding: 12px;
-    background: var(--primary);
-    color: var(--light);
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: 0.2s;
+    margin-top: 10px;
   }
 
-  .submit-btn:hover {
-    background: var(--secondary);
+  button:hover {
+    opacity: 0.9;
   }
 </style>
