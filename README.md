@@ -4,7 +4,16 @@
 
 This project is a frontend website for a fictional business called **Mobile Karaoke & DJ**.  
 It was created as part of my Web Development assignment.  
-The site is built using **SvelteKit** and includes multiple pages such as Home, About, Songs, Bookings, Login, and Register.
+The site is built using **SvelteKit** and includes multiple pages such as Home, About, Songs,
+Bookings, Login, and Register.
+
+# Project Status
+
+This project is now fully completed and successfully uploaded to GitHub.  
+All pages, components, layouts, and form structures have been implemented and tested.  
+The repository contains the full SvelteKit project, including all source files, routes, and assets.
+
+
 
 # How to run the svlte kit
 Step 1: Npm install
@@ -81,8 +90,45 @@ The project use a clean and modern visual style with:
   .Clean accessible labels and inputs
   .Responsive layout using flexbox
   .CSS variables for colours and spacing 
+
+
+
+# AI Usage in This Project
+
+AI was used as a support tool during the development of this project.  
+It did not write the project for me — instead, it helped me:
+
+- Understand SvelteKit routing, layouts, and file structure
+- Fix errors such as 405 form issues and folder misplacements
+- Get step‑by‑step explanations for Git and GitHub commands
+- Improve the structure and clarity of my code
+- Generate clean commit messages and organize my workflow
+- Create and refine this README
+- Speed up troubleshooting when I got stuck
+
+All final decisions, code implementation, styling, and project structure were done by me.  
+AI acted as a learning assistant to help me complete the assignment more efficiently.
+
+
+  
   .Clear call-to-action buttons with hover effects
   .Simple POST method steup fpr future backend integrantion
 
   This keeps the UI consistent and makes it eaiser to expand the project later.
+
+
+
+
+# What I Learned
+
+Throughout this project I improved my skills in:
+
+- SvelteKit routing and layouts
+- Building reusable components
+- Structuring a multi‑page frontend project
+- Using Git and GitHub for version control
+- Writing cleaner, more maintainable code
+- Debugging and problem‑solving with AI assistance
+
+  
 
