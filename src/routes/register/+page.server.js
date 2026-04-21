@@ -9,6 +9,13 @@ export const actions = {
 
     console.log("Registration received:", { name, email, password });
 
+    if (!name || !email || !password) {
+      return {
+        error: true,
+        message: "All fields are required."
+      };
+    }
+
     return {
       success: true,
       message: "Registration submitted successfully!"

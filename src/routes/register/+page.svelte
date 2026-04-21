@@ -1,6 +1,32 @@
-<h2>Create an Account</h2>
+<script>
+  import { enhance } from '$app/forms';
 
-<form method="POST" class="auth-form">
+  // runes mode props
+  const { form } = $props();
+
+  // FIX: reactive state must use $state()
+  let show = $state(true);
+
+  // FIX: reactive block replaced with $effect()
+  $effect(() => {
+    if (form?.success || form?.error) {
+      show = true;
+      setTimeout(() => (show = false), 3000);
+    }
+  });
+</script>
+
+<h2>Register</h2>
+
+{#if form?.success && show}
+  <div class="notice success">{form.message}</div>
+{/if}
+
+{#if form?.error && show}
+  <div class="notice error">{form.message}</div>
+{/if}
+
+<form method="POST" class="auth-form" use:enhance>
   <label>
     Name:
     <input type="text" name="name" required>
@@ -25,6 +51,23 @@
     margin-bottom: 20px;
   }
 
+  .notice {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .success {
+    background: #d4ffd4;
+    border: 1px solid #2a8a2a;
+  }
+
+  .error {
+    background: #ffd4d4;
+    border: 1px solid #8a2a2a;
+  }
+
   .auth-form {
     display: flex;
     flex-direction: column;
@@ -32,7 +75,7 @@
     background: #fafafa;
     padding: 25px;
     border-radius: 8px;
-    border-left: 4px solid var(--secondary);
+    border-left: 4px solid var(--primary);
   }
 
   label {
@@ -48,7 +91,7 @@
 
   .auth-btn {
     padding: 12px;
-    background: var(--secondary);
+    background: var(--primary);
     color: var(--light);
     border: none;
     border-radius: 6px;
@@ -57,6 +100,6 @@
   }
 
   .auth-btn:hover {
-    background: var(--primary);
+    background: var(--secondary);
   }
 </style>

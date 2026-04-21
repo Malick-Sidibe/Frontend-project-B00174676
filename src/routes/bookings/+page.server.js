@@ -11,6 +11,13 @@ export const actions = {
 
     console.log("Booking received:", { name, email, date, time, groupSize });
 
+    if (!name || !email || !date || !time || !groupSize) {
+      return {
+        error: true,
+        message: "Please fill in all fields."
+      };
+    }
+
     return {
       success: true,
       message: "Booking submitted successfully!"

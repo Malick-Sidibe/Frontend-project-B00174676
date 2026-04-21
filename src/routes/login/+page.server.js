@@ -8,6 +8,14 @@ export const actions = {
 
     console.log("Login received:", { email, password });
 
+    // Example validation (you can change this)
+    if (!email || !password) {
+      return {
+        error: true,
+        message: "Please fill in all fields."
+      };
+    }
+
     return {
       success: true,
       message: "Login submitted successfully!"
